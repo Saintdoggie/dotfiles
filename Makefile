@@ -12,10 +12,10 @@ dotfiles:
 
 
 system: dotfiles
-	sudo cp configuration.nix /etc/nixos/configuration.nix
+	sudo cp main-configs/configuration.nix /etc/nixos/configuration.nix
 
 home-manager: system
-	cp home.nix ~/.config/nixpkgs/home.nix
+	cp main-configs/home.nix ~/.config/nixpkgs/home.nix
 	
 	cp home-manager/packages.nix ~/.config/nixpkgs/home-manager/packages.nix
 	cp home-manager/program-configs.nix ~/.config/nixpkgs/home-manager/program-configs.nix
