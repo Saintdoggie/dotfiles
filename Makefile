@@ -1,9 +1,9 @@
 init:
-	mkdir .config
-	mkdir .config/nixpkgs
-	mkdir .config/nixpkgs/home-manager
+	mkdir ~/.config
+	mkdir ~/.config/nixpkgs
+	mkdir ~/.config/nixpkgs/home-manager
 
-	mkdir .config/hypr
+	mkdir ~/.config/hypr
 
 dotfiles:
 	cp dotfiles/hyprland.conf ~/.config/hypr/hyprland.conf
