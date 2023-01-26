@@ -9,6 +9,10 @@ zsh as the shell and home-manager for configurating the system
 To install, run 
 
 ```
+git clone https://github/Saintdoggie/nixOS-dotfiles
+```
+then
+```
 ./installer
 ```
 
