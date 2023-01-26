@@ -16,4 +16,4 @@ then
 ./installer
 ```
 
-then type I, for install
+then follow instructions in the installer
