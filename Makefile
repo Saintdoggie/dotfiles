@@ -5,15 +5,10 @@ init:
 
 	mkdir .config/hypr
 
-
-
-
 dotfiles:
 	cp dotfiles/hyprland.conf ~/.config/hypr/hyprland.conf
 	cp dotfiles/neofetch.conf ~/.config/neofetch/config.conf
 	cp dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
-
-
 
 
 system: dotfiles
