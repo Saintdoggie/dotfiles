@@ -9,6 +9,7 @@ zsh as the shell and home-manager for configurating the system
 To install, run 
 
 ```
-make init
-make update
+./installer
 ```
+
+then type I, for install
