@@ -13,7 +13,7 @@ git clone https://github/Saintdoggie/nixOS-dotfiles
 ```
 then
 ```
-./installer
+./install
 ```
 
 then follow instructions in the install
