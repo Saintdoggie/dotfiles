@@ -10,6 +10,7 @@ let
     blessings
     nextcord
     requests
+    django
     # other python packages
   ];
 in {

@@ -5,11 +5,11 @@
     #development tools
     pkgs.kitty
     pkgs.alacritty
-
     pkgs.qemu
     pkgs.vscode
     pkgs.jetbrains.idea-community
     pkgs.gnumake
+    pkgs.sqlite
 
     #terminal cool stuff
     pkgs.neofetch
@@ -27,6 +27,7 @@
     pkgs.pavucontrol
     pkgs.spotify
     pkgs.discord
+    pkgs.vlc
 
     #important stuff for os
     pkgs.i2c-tools
@@ -41,6 +42,7 @@
     pkgs.waybar
     pkgs.swaybg
     pkgs.rofi
+    pkgs.grim
 
     #vpn stuff
     pkgs.protonvpn-cli
