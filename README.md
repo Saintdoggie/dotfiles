@@ -16,9 +16,6 @@ make update
 * Hyprland as the Window Manager.
 * Rofi as the Application launcher.
 
-## To Do
-* Include more configs
-* put more in nix files
 
 ## Config Credits
 Rofi and Hyprland configs are based on Chris Titus's and Linuxmobile's configs
