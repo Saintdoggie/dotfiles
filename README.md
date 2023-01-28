@@ -20,3 +20,4 @@ make update
 ## Config Credits
 Rofi and Hyprland configs are based on Chris Titus's and Linuxmobile's configs
 
+[Image](https://github.com/Saintdoggie/NixOS-configs/dotfiles/Screenshot.png)
