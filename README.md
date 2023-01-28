@@ -1,6 +1,6 @@
 # NixOS Configs
 
-To install, run 
+To install, run
 
 ```
 git clone https://github/Saintdoggie/nixOS-dotfiles
