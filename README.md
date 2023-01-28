@@ -6,16 +6,22 @@ To install, run
 
 ```
 git clone https://github/Saintdoggie/nixOS-dotfiles
-./install
+make init
+make update
 ```
 
 
 
 ## Applications
-* zsh as the shell.
-* home-manager for user applications.
+* Zsh as the shell.
+* Home-manager for user applications.
 * Hyprland as the Window Manager.
-* Rofi as the Application launcher 
+* Rofi as the Application launcher.
+
+##To Do
+* Include more configs
+* put more in nix files
 
 ## Dotfile Credits
 Hyprland dotfiles are based on Chris Titus's and Linuxmobile's configs
+

@@ -1,1 +1,3 @@
-keepGoing = false
+keepGoing = true
+display = "wayland"
+dev = "true"

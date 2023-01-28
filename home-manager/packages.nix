@@ -16,14 +16,12 @@
     pkgs.htop
     pkgs.btop
 
-
-
     #games
     pkgs.prismlauncher
 
 
     #gui cool things
-    pkgs.brave
+    # pkgs.brave
     pkgs.pavucontrol
     pkgs.spotify
     pkgs.discord
@@ -39,17 +37,20 @@
 
     #Hyprland stuff
     pkgs.xwayland
-    pkgs.waybar
-    pkgs.swaybg
+    pkgs.hyprpaper
     pkgs.rofi
     pkgs.grim
+    pkgs.slurp
+    pkgs.dunst
+    pkgs.cava
+    
+
 
     #vpn stuff
     pkgs.protonvpn-cli
     pkgs.protonvpn-gui
 
     #virtual machine stuff
-    pkgs.virt-manager
     pkgs.qemu
     pkgs.swtpm
 
@@ -57,8 +58,6 @@
     pkgs.nmap
     pkgs.wireshark
     pkgs.amass
-
-
     
     #fonts
     pkgs.meslo-lgs-nf

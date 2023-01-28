@@ -21,4 +21,6 @@ class installer:
                 print("Succesfully updated System!")
 
         else:
-            pass
+            print("Installing system")
+            os.system("make init")
+            os.system("make update")

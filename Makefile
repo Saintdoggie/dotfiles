@@ -1,17 +1,17 @@
 init:
-	mkdir ~/.config
-	mkdir ~/.config/nixpkgs
 	mkdir ~/.config/nixpkgs/home-manager
 
 	mkdir ~/.config/hypr
 
-dotfiles:
-	cp dotfiles/hyprland.conf ~/.config/hypr/hyprland.conf
-	cp dotfiles/neofetch.conf ~/.config/neofetch/config.conf
-	cp dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+config:
+	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/hypr/ ~/.config/
+	cp ~/files/dotfiles/nixOS-dotfiles/dotfiles/neofetch.conf ~/.config/neofetch/config.conf
+	cp ~/files/dotfiles/nixOS-dotfiles/dotfiles/kitty.conf ~/.config/kitty/kitty.yml
+	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/waybar/ ~/.config/
 
 
-system: dotfiles
+
+system:  config
 	sudo cp main-configs/configuration.nix /etc/nixos/configuration.nix
 
 home-manager: system
@@ -24,4 +24,5 @@ home-manager: system
 update: home-manager
 	sudo nixos-rebuild switch
 	home-manager switch
+	nix-collect-garbage
 

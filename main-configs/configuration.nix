@@ -174,6 +174,7 @@ in {
     pkgs.git
     
     pkgs.home-manager
+    pkgs.virt-manager
     pkgs.gparted
     pkgs.jdk
     pkgs.gtop
@@ -184,6 +185,7 @@ in {
 
     #games
     pkgs.python39
+    pkgs.waybar
 
 
   ];

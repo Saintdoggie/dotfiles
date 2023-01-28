@@ -3,7 +3,7 @@
 #terminal stuff
   programs.zsh = {
     enable = true;
-    initExtra = "neofetch\n[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh";
+    initExtra = "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh";
 
     zplug = {
       enable = true;
