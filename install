@@ -1,13 +1,5 @@
 #!/bin/sh
 
-GREEN='\033[42m'
+#not much here...
 
-
-while true; do
-    read -p "Would you like to install or update this instance? (install/Upgrade) " answer
-    case $answer in
-        [Ii]* ) make init; make update; break;;
-        [uU]* ) make update;;
-        * ) make update; echo -e '\033[32mExiting installer\033[m';exit;;
-    esac
-done
+python installer/main.py
