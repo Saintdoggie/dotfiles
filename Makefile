@@ -4,6 +4,8 @@ init:
 	mkdir ~/.config/kitty
 
 	mkdir ~/.config/hypr
+	mkdir ~/.config/neofetch
+	mkdir ~/.config/kitty
 
 config:
 	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/hypr/ ~/.config/
