@@ -1,12 +1,14 @@
 init:
 	mkdir ~/.config/nixpkgs/home-manager
+	
+	mkdir ~/.config/kitty
 
 	mkdir ~/.config/hypr
 
 config:
 	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/hypr/ ~/.config/
 	cp ~/files/dotfiles/nixOS-dotfiles/dotfiles/neofetch.conf ~/.config/neofetch/config.conf
-	cp ~/files/dotfiles/nixOS-dotfiles/dotfiles/kitty.conf ~/.config/kitty/kitty.yml
+	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/kitty ~/.config/kitty/kitty.yml
 	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/waybar/ ~/.config/
 
 
