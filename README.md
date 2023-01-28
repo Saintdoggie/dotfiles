@@ -18,7 +18,7 @@ make update
 * Hyprland as the Window Manager.
 * Rofi as the Application launcher.
 
-##To Do
+## To Do
 * Include more configs
 * put more in nix files
 
