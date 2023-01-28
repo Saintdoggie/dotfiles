@@ -1,6 +1,4 @@
-# NixOS Installer
-
-Installer for my dotfiles using python.
+# NixOS Configs
 
 To install, run 
 
