@@ -12,8 +12,7 @@ config:
 	cp ~/files/dotfiles/nixOS-dotfiles/dotfiles/neofetch.conf ~/.config/neofetch/config.conf
 	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/kitty ~/.config/kitty/kitty.yml
 	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/waybar/ ~/.config/
-
-
+	cp -r ~/files/dotfiles/nixOS-dotfiles/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 
 system:  config
 	sudo cp main-configs/configuration.nix /etc/nixos/configuration.nix
