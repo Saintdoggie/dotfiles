@@ -1,19 +1,21 @@
+# NixOS Installer
 
-## nixOS Installer
-
-My nixOS installer
-Hyprland as the wm, with Chris Titus's config(made from Linuxmobile's configs)
-
-zsh as the shell and home-manager for configurating the system
+Installer for my dotfiles using python.
 
 To install, run 
 
 ```
 git clone https://github/Saintdoggie/nixOS-dotfiles
-```
-Then type
-```
 ./install
 ```
 
-then follow instructions in the install
+
+
+## Applications
+* zsh as the shell.
+* home-manager for user applications.
+* Hyprland as the Window Manager.
+* Rofi as the Application launcher 
+
+## Dotfile Credits
+Hyprland dotfiles are based on Chris Titus's and Linuxmobile's configs
