@@ -22,6 +22,6 @@ make update
 * Include more configs
 * put more in nix files
 
-## Dotfile Credits
-Hyprland dotfiles are based on Chris Titus's and Linuxmobile's configs
+## Config Credits
+Rofi and Hyprland configs are based on Chris Titus's and Linuxmobile's configs
 
