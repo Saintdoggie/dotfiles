@@ -25,7 +25,6 @@
     pkgs.pavucontrol
     pkgs.spotify
     pkgs.discord
-    pkgs.vlc
 
     #important stuff for os
     pkgs.i2c-tools
@@ -43,6 +42,7 @@
     pkgs.slurp
     pkgs.dunst
     pkgs.cava
+    
     
 
 

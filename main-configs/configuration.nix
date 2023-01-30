@@ -8,20 +8,22 @@ let
   Python-packages = p: with p; [
     xlib  
     blessings
-    nextcord
+    # nextcord
     requests
     django
+    discordpy
+    python-dotenv
     # other python packages
   ];
 in {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./hardware-configuration.nix
       hyprland.nixosModules.default
 
     ];
 
-	  # Use the systemd-boot EFI boot loader.
+	  # Use Grub as bootloader
   boot.loader = {
     systemd-boot.enable = false;
     efi = {
@@ -32,7 +34,17 @@ in {
       devices = [ "nodev" ];
       efiSupport = true;
     };
-  };  
+  };
+  systemd.user.services.mountDevices = {
+    description = "Mounts /dev/sdb and /dev/nvme0n1p1";
+    serviceConfig.PassEnvironment = "DISPLAY";
+    script = ''
+      mount /dev/nvme0n1p1 /boot
+      mount /dev/sda1 ~/files
+
+    '';
+    wantedBy = [ "multi-user.target" ]; # starts after login
+  };
 
  environment = {
     variables = {
