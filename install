@@ -1,5 +1,0 @@
-#!/bin/sh
-
-#not much here...
-
-python installer/main.py

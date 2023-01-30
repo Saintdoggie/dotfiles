@@ -1,3 +1,0 @@
-keepGoing = true
-display = "wayland"
-dev = "true"
