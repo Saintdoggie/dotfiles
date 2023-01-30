@@ -10,10 +10,12 @@ make update
 
 ## Applications
 * Zsh as the shell.
-* Home-manager for user applications.
+* Home-manager for User Management.
 * Hyprland as the Window Manager.
 * Rofi as the Application launcher.
 
+##Warning
+* You may need to modify some configs, because some are specific to my machine
 
 ## Config Credits
 Rofi, Waybar and Hyprland configs are based on Chris Titus's and Linuxmobile's configs
