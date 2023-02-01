@@ -15,7 +15,7 @@ make update
 * Rofi as the Application launcher.
 
 ## Warning
-* You WILL need to modify the makefile and change the file location of everything 
+* You WILL need to modify the makefile and change the file location of all the dotfiles
 
 ## Config Credits
 Rofi, Waybar and Hyprland configs are based on Chris Titus's and Linuxmobile's configs
