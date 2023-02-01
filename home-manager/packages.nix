@@ -10,6 +10,9 @@
     pkgs.jetbrains.idea-community
     pkgs.gnumake
     pkgs.sqlite
+    pkgs.raylib
+    pkgs.gcc
+
 
     #terminal cool stuff
     pkgs.neofetch
@@ -42,10 +45,9 @@
     pkgs.slurp
     pkgs.dunst
     pkgs.cava
-    
-    
-
-
+    pkgs.playerctl
+    pkgs.via
+    pkgs.qmk
     #vpn stuff
     pkgs.protonvpn-cli
     pkgs.protonvpn-gui
