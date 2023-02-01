@@ -14,7 +14,7 @@ make update
 * Hyprland as the Window Manager.
 * Rofi as the Application launcher.
 
-##Warning
+## Warning
 * You WILL need to modify the makefile and change the file location of everything 
 
 ## Config Credits
