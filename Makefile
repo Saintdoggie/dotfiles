@@ -15,17 +15,26 @@ config:
 	cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh
 
 system:  config
-	sudo cp main-configs/configuration.nix /etc/nixos/configuration.nix
+	sudo cp system/configuration.nix /etc/nixos/configuration.nix
+
+	sudo cp system/boot.nix /etc/nixos/boot.nix
+	sudo cp system/graphics.nix /etc/nixos/graphics.nix
+	sudo cp system/misc.nix /etc/nixos/misc.nix
+	sudo cp system/nvidia.nix /etc/nixos/nvidia.nix
+	sudo cp system/users.nix /etc/nixos/users.nix
+
 
 home-manager: system
-	cp main-configs/home.nix ~/.config/nixpkgs/home.nix
+	cp home/home.nix ~/.config/nixpkgs/home.nix
 	
-	cp home-manager/packages.nix ~/.config/nixpkgs/home-manager/packages.nix
-	cp home-manager/program-configs.nix ~/.config/nixpkgs/home-manager/program-configs.nix
+	cp home/packages.nix ~/.config/nixpkgs/home-manager/packages.nix
+	cp home/program-configs.nix ~/.config/nixpkgs/home-manager/program-configs.nix
 
 
 update: home-manager
 	sudo nixos-rebuild switch
 	home-manager switch
+	~/.config/hypr/removeWindowLocks.sh
 	nix-collect-garbage
+
 

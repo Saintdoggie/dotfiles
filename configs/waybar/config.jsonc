@@ -8,7 +8,8 @@
     "height": 0,
     "modules-left": [
         "clock",
-        "custom/weather"
+        "custom/weather",
+        "wlr/workspaces"
     ],
    "custom/weather" : {
         "tooltip" : true,
@@ -19,5 +20,9 @@
     },
     "clock": {
         "format": "{: %I:%M   %m/%d}"
+    },
+    "wlr/workspaces": {
+        "format": "{name}",
+        "sort-by-number": true
     }
 }

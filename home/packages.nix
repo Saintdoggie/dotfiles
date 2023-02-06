@@ -1,4 +1,5 @@
-{ pkgs, ...}: {
+{ pkgs, ...}: 
+{
   nixpkgs.config.allowUnfree = true;
   home.packages = [
     
@@ -12,6 +13,11 @@
     pkgs.sqlite
     pkgs.raylib
     pkgs.gcc
+    pkgs.rustup
+    pkgs.ripgrep
+    pkgs.fd
+    pkgs.android-tools
+    pkgs.killall
 
 
     #terminal cool stuff
@@ -22,11 +28,13 @@
     #games
     pkgs.prismlauncher
 
-
     #gui cool things
-    # pkgs.brave
+    pkgs.brave
     pkgs.pavucontrol
     pkgs.spotify
+    pkgs.ncspot
+    pkgs.spotify-tui
+
     pkgs.discord
 
     #important stuff for os
@@ -35,7 +43,6 @@
     pkgs.polkit
     pkgs.xdg-desktop-portal
     pkgs.lxde.lxsession
-
 
     #Hyprland stuff
     pkgs.xwayland
@@ -48,6 +55,8 @@
     pkgs.playerctl
     pkgs.via
     pkgs.qmk
+    pkgs.opentabletdriver
+    
     #vpn stuff
     pkgs.protonvpn-cli
     pkgs.protonvpn-gui
