@@ -19,8 +19,8 @@ make update
 * if you want this for the Hyprland configs, just take those ones instead of doing the work to port everything to your system
 * You may need to do the following:
     * check the makefile, look at all file paths and modify them for you
-    * modify users in ![THing](https://github.com/Saintdoggie/NixOS-configs/blob/main/system/users.nix)
-    * replace wallpapers in ![THing](https://github.com/Saintdoggie/NixOS-configs/blob/main/configs/hypr/hyprpaper.conf)
+    * modify users in ![system/users.nix](https://github.com/Saintdoggie/NixOS-configs/blob/main/system/users.nix)
+    * replace wallpapers in ![configs/hypr/hyprpaper.conf](https://github.com/Saintdoggie/NixOS-configs/blob/main/configs/hypr/hyprpaper.conf)
 
 ## Config Credits
 Rofi, Waybar and Hyprland configs are based on Chris Titus's and Linuxmobile's configs
