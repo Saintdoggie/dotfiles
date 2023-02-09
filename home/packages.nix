@@ -18,6 +18,8 @@
     pkgs.fd
     pkgs.android-tools
     pkgs.killall
+    pkgs.xmrig
+
 
 
     #terminal cool stuff
@@ -33,7 +35,7 @@
     pkgs.pavucontrol
     pkgs.spotify
     pkgs.ncspot
-    pkgs.spotify-tui
+    pkgs.monero-gui
 
     pkgs.discord
 
@@ -47,7 +49,7 @@
     #Hyprland stuff
     pkgs.xwayland
     pkgs.hyprpaper
-    pkgs.rofi
+    pkgs.wofi
     pkgs.grim
     pkgs.slurp
     pkgs.dunst

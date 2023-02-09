@@ -1,0 +1,6 @@
+#!/bin/sh
+
+#not much here...
+
+#this makes a nix shell with 2 pkgs, termcolor and python then runs the installer
+nix-shell -p python39Packages.termcolor python39 --run "python installer/update.py"

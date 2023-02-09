@@ -34,7 +34,13 @@ home-manager: system
 update: home-manager
 	sudo nixos-rebuild switch
 	home-manager switch
-	~/.config/hypr/removeWindowLocks.sh
+		
+	hyprctl keyword windowrule "workspace unset,kitty"
+	hyprctl keyword windowrule "workspace unset,brave"
+	hyprctl keyword windowrule "workspace unset,prismlauncher"
+	hyprctl keyword windowrule "workspace unset,kitty"
+	hyprctl keyword windowrule "workspace unset,discord"
+
 	nix-collect-garbage
 
 

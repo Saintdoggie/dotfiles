@@ -20,7 +20,7 @@
 
 
   console = {
-    font = "Lat2-Terminus16";
+    font = "fira-code";
     #keyMap = "us";
     useXkbConfig = true; # use xkbOptions in tty.
   };
