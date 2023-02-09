@@ -63,7 +63,15 @@ in {
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = ["liam"];
 
-  
+  environment.etc = {
+  # Creates /etc/nanorc
+  issue = {
+    text = ''
+      MrComputer TTY Login
+      -------------------
+    '';
+  };
+};
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [
