@@ -49,7 +49,6 @@
     #Hyprland stuff
     pkgs.xwayland
     pkgs.hyprpaper
-    pkgs.wofi
     pkgs.grim
     pkgs.slurp
     pkgs.dunst

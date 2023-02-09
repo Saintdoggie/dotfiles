@@ -1,4 +1,4 @@
-/nix/store/20jk3dpn9hs6gxda3xnlhi1wwihyfnh5-home-manager-generation
+/nix/store/9yj703n4sdhd5isqd3dyy1xpkjydc73n-home-manager-generation
 Starting Home Manager activation
 Activating checkFilesChanged
 Activating checkLinkTargets
@@ -6,7 +6,7 @@ Activating writeBoundary
 Activating installPackages
 Activating linkGeneration
 Cleaning up orphan links from /home/liam
-No change so reusing latest profile generation 64
+No change so reusing latest profile generation 66
 Creating home file links in /home/liam
 Activating onFilesChange
 Activating reloadSystemd
