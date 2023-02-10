@@ -1,7 +1,7 @@
 settings=$(cat ~/.config/hypr/removeWindowLocksSettings)
 
 
-if [settings = "doRemoveWindowLocksFast"]
+if [ $settings = "doRemoveWindowLocksFast" ]
 then
     hyprctl keyword windowrule "workspace unset,kitty"
     hyprctl keyword windowrule "workspace unset,brave"
