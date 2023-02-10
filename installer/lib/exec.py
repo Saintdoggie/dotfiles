@@ -9,7 +9,7 @@ class Execution:
         Execution.obj.currentOutputCommand = 0
 
     def exec(command):
-        print(f"executing \"{command}\"")
+        print(colored(f"executing", "green"), f"\"{command}\"")
         checks = os.system(f"{command} > installer/output/{Execution.obj.currentOutputCommand}")
         if (checks != 0):
             print(colored("Error... exiting", "red"))
