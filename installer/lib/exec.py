@@ -36,7 +36,8 @@ class Execution:
             "1": "cp configs/neofetch.conf ~/.config/neofetch/config.conf",
             "2": "cp -r configs/kitty ~/.config/",
             "3": "cp -r configs/waybar/ ~/.config/",
-            "4": "cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh"
+            "4": "cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh",
+            "5": "cp -r configs/wlogout ~/.config/"
         }
     }
 

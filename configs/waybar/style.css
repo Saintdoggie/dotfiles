@@ -6,11 +6,10 @@
     font-weight: bold;
     font-size: 14px;
     min-height: 0px;
-    opacity: 0.98;
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
+    background: rgba(0, 0, 0, 0);
     color: #cdd6f4;
 }
 
@@ -19,24 +18,22 @@ tooltip {
     border-radius: 10px;
     border-width: 2px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: #111b15;
 }
 
 
 
 #custom-weather,
-#clock,
-custom-spotify {
-    background: #1e1e2e;
+#clock {
+    background: rgba(0, 0, 0, 0.5);
     padding-top: 7px;
     padding-bottom: 7px;
+    color: #FFF;
 
-    border: 1px solid #181825;
 }
 
 
 #clock {
-    color: #fab387;
     border-radius: 10px 0px 0px 10px;
     margin-left: 0px;
     border-right: 0px;
@@ -51,34 +48,23 @@ custom-spotify {
 
 #workspaces button {
     padding: 5px;
-    color: #313244;
+    color: #cdd6f4;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: #FFF;
 }
 
 #workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
+    color: #FFF;
+    /* background: #eba0ac; */
     border-radius: 10px;
 }
 
-#workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    border-radius: 10px;
-}
-
-#workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
-    border-radius: 10px;
-}
 
 #workspaces {
-    background: #1e1e2e;
+    background: rgba(0, 0, 0, .5);
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;

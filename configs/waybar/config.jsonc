@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "mode": "dock",
+    "output": "DP-1", 
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -12,7 +12,6 @@
         "wlr/workspaces"
     ],
    "custom/weather" : {
-        "tooltip" : true,
         "format" : "{}",
         "interval" : 30,
         "exec" : "~/.config/waybar/scripts/waybar-wttr.py",

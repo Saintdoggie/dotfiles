@@ -13,6 +13,7 @@ config:
 	cp -r configs/kitty ~/.config/
 	cp -r configs/waybar/ ~/.config/
 	cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh
+	cp -r configs/wlogout ~/.config/
 
 system:  config
 	sudo cp system/configuration.nix /etc/nixos/configuration.nix
