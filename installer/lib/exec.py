@@ -12,7 +12,7 @@ class Execution:
         print(colored(f"executing", "green"), f"\"{command}\"")
         checks = os.system(f"{command} > installer/output/{Execution.obj.currentOutputCommand}")
         if (checks != 0):
-            print(colored("Error... exiting", "red"))
+            print(colored("Error... ", "red"), "exiting")
             sys.exit()
         Execution.obj.currentOutputCommand+=1
     
@@ -38,6 +38,9 @@ class Execution:
             "3": "cp -r configs/waybar/ ~/.config/",
             "4": "cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh",
             "5": "cp -r configs/wlogout ~/.config/"
+        },
+        "clean": {
+            "0": "nix-collect-garbage"
         }
     }
 
@@ -50,6 +53,10 @@ class Execution:
                 Execution.exec(str(value))
         def configs():
             for key, value in execution.list["configs"].items():
+                Execution.exec(str(value))
+
+        def clean():
+            for key, value in execution.list["clean"].items():
                 Execution.exec(str(value))
 
 execution = Execution()
