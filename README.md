@@ -15,4 +15,4 @@ git clone https://github/Saintdoggie/nixOS-dotfiles
 ## Config Credits
 Rofi, Waybar and Hyprland configs are based on Chris Titus's and Linuxmobile's configs
 
-![Image](https://github.com/Saintdoggie/NixOS-configs/blob/main/configs/screenshot.png?raw=true)
+![Image](https://github.com/Saintdoggie/NixOS-configs/blob/main/configs/Screenshot.png?raw=true)
