@@ -30,11 +30,19 @@ class options:
 
             if (sys.argv[1] == "clean"):
                 execution.install.clean()
+            if (sys.argv[1] == "help" or sys.argv[1] == "--help"):
+                print("Usage:")
+                print(" update  Updates the system")
+                print(" config  Updates the configs")
+                print(" clean   cleans system")
+                print(" help    prints help message")
+
+
+
 
         except:
             print("Usage:")
-            print(" --update  Updates the system")
-            print(" --config  Updates the configs")
-            print(" --clean   cleans system")
-
-
+            print(" update  Updates the system")
+            print(" config  Updates the configs")
+            print(" clean   cleans system")
+            print(" help    prints help message")
