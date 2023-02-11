@@ -25,11 +25,11 @@ class options:
                 print(colored("Notice: ", "yellow"),"Some log files are stored in installer/output, please look through them for issues.")
 
             if (sys.argv[1] == "config"):
-
                 execution.install.configs()
 
             if (sys.argv[1] == "clean"):
                 execution.install.clean()
+
             if (sys.argv[1] == "help" or sys.argv[1] == "--help"):
                 print("Usage:")
                 print(" update  Updates the system")

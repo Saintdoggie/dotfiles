@@ -48,12 +48,15 @@ class Execution:
         def system():
             for key, value in execution.list["system"].items():
                 Execution.exec(str(value))
+
         def home():
             for key, value in execution.list["home"].items():
                 Execution.exec(str(value))
+
         def configs():
             for key, value in execution.list["configs"].items():
                 Execution.exec(str(value))
+                
 
         def clean():
             for key, value in execution.list["clean"].items():
