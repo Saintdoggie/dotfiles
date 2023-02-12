@@ -8,6 +8,7 @@
     pkgs.alacritty
     pkgs.qemu
     pkgs.vscode
+    pkgs.neovim
     pkgs.jetbrains.idea-community
     pkgs.gnumake
     pkgs.sqlite
@@ -19,8 +20,6 @@
     pkgs.android-tools
     pkgs.killall
     pkgs.xmrig
-
-
 
     #terminal cool stuff
     pkgs.neofetch

@@ -34,7 +34,7 @@ class Execution:
         "configs": {
             "0": "cp -r configs/hypr/ ~/.config/",
             "1": "cp configs/neofetch.conf ~/.config/neofetch/config.conf",
-            "2": "cp -r configs/kitty ~/.config/",
+            "2": "cp -r configs/alacritty ~/.config/",
             "3": "cp -r configs/waybar/ ~/.config/",
             "4": "cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh",
             "5": "cp -r configs/wlogout ~/.config/"
@@ -46,10 +46,12 @@ class Execution:
 
     class install:
         def system():
+            os.system("sudo ls > /dev/null")
             for key, value in execution.list["system"].items():
                 Execution.exec(str(value))
 
         def home():
+            os.system("sudo ls > /dev/null")
             for key, value in execution.list["home"].items():
                 Execution.exec(str(value))
 
@@ -59,6 +61,7 @@ class Execution:
                 
 
         def clean():
+            os.system("sudo ls > /dev/null")
             for key, value in execution.list["clean"].items():
                 Execution.exec(str(value))
 

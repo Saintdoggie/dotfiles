@@ -10,7 +10,7 @@ init:
 config:
 	cp -r configs/hypr/ ~/.config/
 	cp configs/neofetch.conf ~/.config/neofetch/config.conf
-	cp -r configs/kitty ~/.config/
+	cp -r configs/alacritty ~/.config/
 	cp -r configs/waybar/ ~/.config/
 	cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh
 	cp -r configs/wlogout ~/.config/
