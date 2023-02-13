@@ -14,12 +14,16 @@
     pkgs.sqlite
     pkgs.raylib
     pkgs.gcc
-    pkgs.rustup
     pkgs.ripgrep
     pkgs.fd
     pkgs.android-tools
     pkgs.killall
     pkgs.xmrig
+    pkgs.imagemagick
+
+    #themes
+    pkgs.nordic
+    pkgs.sweet
 
     #terminal cool stuff
     pkgs.neofetch

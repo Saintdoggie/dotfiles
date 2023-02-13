@@ -9,16 +9,12 @@
 }
 
 window#waybar {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(100, 0, 255, 0.2);
     color: #cdd6f4;
 }
 
 tooltip {
-    background: #1e1e2e;
-    border-radius: 10px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #111b15;
+    background: rgba(39, 0, 96, 0.5);
 }
 
 
@@ -55,18 +51,38 @@ tooltip {
 #workspaces button.active {
     color: #FFF;
 }
+#workspaces button:hover {
+    background: #11111b;
+    color: white;
+    border-color: black;
+    border-radius: 10px;
+}
 
 #workspaces button.focused {
-    color: #FFF;
-    /* background: #eba0ac; */
+    color: black;
+    background: #eba0ac;
     border-radius: 10px;
 }
 
 
 #workspaces {
     background: rgba(0, 0, 0, .5);
+    border-color: black;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
     padding-left: 5px;
+}
+
+#network {
+    background: rgba(0, 0, 0, .5);
+    border-color: black;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+#cpu {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 0px 10px 10px 0px;
 }

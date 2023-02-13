@@ -5,11 +5,15 @@
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "height": 0,
+    "height": 70,
     "modules-left": [
         "clock",
         "custom/weather",
         "wlr/workspaces"
+    ],
+    "modules-right": [
+        "network",
+        "cpu"
     ],
    "custom/weather" : {
         "format" : "{}",
@@ -18,10 +22,19 @@
         "return-type" : "json"
     },
     "clock": {
-        "format": "{: %I:%M   %m/%d}"
+        "format": "{: %I:%M %p   %m/%d}"
     },
     "wlr/workspaces": {
         "format": "{name}",
         "sort-by-number": true
+    },
+    "network": {
+        "format": " {bandwidthUpBits}  {bandwidthDownBits}",
+        "interval": 1, 
+        "min-length": 14
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 1 
     }
 }

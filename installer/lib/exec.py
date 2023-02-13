@@ -41,6 +41,11 @@ class Execution:
         },
         "clean": {
             "0": "nix-collect-garbage"
+        },
+        "restart": {
+            "0": "killall .waybar-wrapped",
+            "1": "waybar &"
+
         }
     }
 
@@ -59,6 +64,9 @@ class Execution:
             for key, value in execution.list["configs"].items():
                 Execution.exec(str(value))
                 
+        def restart():
+            for key, value in execution.list["restart"].items():
+                Execution.exec(str(value))
 
         def clean():
             os.system("sudo ls > /dev/null")

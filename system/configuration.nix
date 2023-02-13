@@ -87,9 +87,7 @@ in {
     pkgs.gparted
     pkgs.jdk
     pkgs.gtop
-    
-    #themes
-    pkgs.nordic
+
 
     #games
     pkgs.python39

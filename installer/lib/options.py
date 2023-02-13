@@ -26,9 +26,12 @@ class options:
 
             if (sys.argv[1] == "config"):
                 execution.install.configs()
+                execution.install.restart()
 
             if (sys.argv[1] == "clean"):
                 execution.install.clean()
+
+
 
             if (sys.argv[1] == "help" or sys.argv[1] == "--help"):
                 print("Usage:")

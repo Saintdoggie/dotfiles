@@ -1,18 +1,18 @@
 {
     "label" : "reboot",
-    "action" : "killall brave; rm ~/.config/hypr/removeWindowLocksSettings; systemctl reboot",
+    "action" : "systemctl reboot",
     "text" : "Reboot",
     "keybind" : "r"
 }
 {
     "label" : "shutdown",
-    "action" : "killall brave;rm ~/.config/hypr/removeWindowLocksSettings;systemctl poweroff",
+    "action" : "systemctl poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 {
     "label" : "logout",
-    "action" : "killall brave;rm ~/.config/hypr/removeWindowLocksSettings;hyprctl dispatch exit 0",
+    "action" : "hyprctl dispatch exit 0",
     "text" : "Logout",
     "keybind" : "l"
 }
