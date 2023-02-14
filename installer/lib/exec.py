@@ -37,7 +37,9 @@ class Execution:
             "2": "cp -r configs/alacritty ~/.config/",
             "3": "cp -r configs/waybar/ ~/.config/",
             "4": "cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh",
-            "5": "cp -r configs/wlogout ~/.config/"
+            "5": "cp -r configs/wlogout ~/.config/",
+            "6": "cp -r configs/wallpapers/* ~/Pictures/"
+
         },
         "clean": {
             "0": "nix-collect-garbage"
