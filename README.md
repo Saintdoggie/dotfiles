@@ -4,7 +4,7 @@ To install, run
 
 ```
 git clone https://github/Saintdoggie/nixOS-dotfiles
-./install
+./install update
 ```
 
 ## Applications
