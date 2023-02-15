@@ -3,7 +3,8 @@
 To install, run
 
 ```
-git clone https://github/Saintdoggie/nixOS-dotfiles
+git clone https://github/Saintdoggie/nixOS-configs
+cd nixOS-configs
 ./install update
 ```
 
