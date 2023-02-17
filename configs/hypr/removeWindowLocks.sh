@@ -4,6 +4,8 @@ hyprctl keyword windowrule "workspace unset,firefox"
 hyprctl keyword windowrule "workspace unset,prismlauncher"
 hyprctl keyword windowrule "workspace unset,kitty"
 hyprctl keyword windowrule "workspace unset,obs"
+hyprctl keyword windowrule "workspace unset,codium"
+
 
 
 

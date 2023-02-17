@@ -7,7 +7,7 @@
     pkgs.kitty
     pkgs.alacritty
     pkgs.qemu
-    pkgs.vscode
+    pkgs.vscodium
     pkgs.neovim
     pkgs.jetbrains.idea-community
     pkgs.gnumake
@@ -50,6 +50,8 @@
     pkgs.lxde.lxsession
 
     #Hyprland stuff
+    pkgs.pipewire
+    pkgs.wireplumber
     pkgs.xwayland
     pkgs.hyprpaper
     pkgs.grim
@@ -64,6 +66,10 @@
     #vpn stuff
     pkgs.protonvpn-cli
     pkgs.protonvpn-gui
+    pkgs.wireguard-tools
+    pkgs.openvpn
+
+
 
     #virtual machine stuff
     pkgs.qemu

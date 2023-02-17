@@ -38,7 +38,9 @@ class Execution:
             "3": "cp -r configs/waybar/ ~/.config/",
             "4": "cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh",
             "5": "cp -r configs/wlogout ~/.config/",
-            "6": "cp -r configs/wallpapers/* ~/Pictures/"
+            "6": "cp -r configs/wallpapers/* ~/Pictures/",
+            "7": "cp -r configs/cava/ ~/.config/"
+
 
         },
         "clean": {
