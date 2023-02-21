@@ -20,6 +20,12 @@
     pkgs.killall
     pkgs.xmrig
     pkgs.imagemagick
+    pkgs.podman
+    pkgs.distrobox
+    pkgs.docker
+
+
+
 
     #themes
     pkgs.nordic
