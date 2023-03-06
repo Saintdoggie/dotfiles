@@ -1,5 +1,6 @@
 import os, sys
 from termcolor import colored
+import distro
 
 class Execution:
     class obj:
@@ -29,17 +30,23 @@ class Execution:
             "0": "cp home/home.nix ~/.config/nixpkgs/home.nix",
             "1": "cp home/packages.nix ~/.config/nixpkgs/home-manager/packages.nix",
             "2": "cp home/program-configs.nix ~/.config/nixpkgs/home-manager/program-configs.nix",
-            "3": "home-manager switch"
+            "3": "nix profile remove 0",
+            "4": "home-manager switch"
         },
         "configs": {
             "0": "cp -r configs/hypr/ ~/.config/",
-            "1": "cp configs/neofetch.conf ~/.config/neofetch/config.conf",
-            "2": "cp -r configs/alacritty ~/.config/",
+            "1": "cp -r configs/neofetch/ ~/.config/config.conf",
+            "2": "cp -r configs/kitty ~/.config/",
             "3": "cp -r configs/waybar/ ~/.config/",
             "4": "cp -r configs/zsh/.p10k.zsh ~/.p10k.zsh",
             "5": "cp -r configs/wlogout ~/.config/",
             "6": "cp -r configs/wallpapers/* ~/Pictures/",
-            "7": "cp -r configs/cava/ ~/.config/"
+            "7": "cp -r configs/cava/ ~/.config/",
+            "8": "cp -r configs/eww ~/.config/",
+            "8": "cp -r configs/dunst ~/.config/dunst",
+
+
+
 
 
         },
@@ -47,20 +54,24 @@ class Execution:
             "0": "nix-collect-garbage"
         },
         "restart": {
-            "0": "killall .waybar-wrapped",
-            "1": "waybar &"
+            # "0": "hyprctl dispatch exit",
+            # "1": "~/start"
 
         }
     }
 
     class install:
         def system():
-            os.system("sudo ls > /dev/null")
-            for key, value in execution.list["system"].items():
-                Execution.exec(str(value))
+            if (distro.id()== "nixos"):
+                os.system("sudo ls > /dev/null")
+                for key, value in execution.list["system"].items():
+                    Execution.exec(str(value))
+            print(distro.id())
 
         def home():
             os.system("sudo ls > /dev/null")
+            if (distro.id() != "nixos")
+                os.system("nix-iA home-manager")
             for key, value in execution.list["home"].items():
                 Execution.exec(str(value))
 

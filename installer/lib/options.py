@@ -1,51 +1,59 @@
 import sys
 from lib.exec import execution
 from termcolor import colored
-
+import os
 
 class options:
     def handleCommandLineOptions():
+        
+        
+        didSomething = False
+        
         try:
-            if (sys.argv[1] == "update"):
-                        
-                # system installation
-                execution.install.system()
+            for i, arg in enumerate(sys.argv):
+ 
+                if (arg == "--update"):
+                    execution.install.system()
+                    execution.install.configs()
+                    execution.install.home()
+                    execution.install.restart()
+                    execution.install.clean()
+                    didSomething = True
 
-                # home installation
-                execution.install.home()
-
-                # config installation
-                execution.install.configs()
-
-                #cleans the system after update
-                execution.install.clean()
-
-
-                #warning message
-                print(colored("Notice: ", "yellow"),"Some log files are stored in installer/output, please look through them for issues.")
-
-            if (sys.argv[1] == "config"):
-                execution.install.configs()
-                execution.install.restart()
-
-            if (sys.argv[1] == "clean"):
-                execution.install.clean()
+                if (arg == "--config"):
+                    execution.install.configs()
+                    didSomething = True
+                    
+                if (arg == "--restart"):
+                    execution.install.restart()
+                    # os.exec("hyprctl dispatch exit")
+                    # os.exec("sudo setsid sh -c 'exec Hyprland <> /dev/tty2 >&0 2>&1' ")
 
 
+                    didSomething = True
 
-            if (sys.argv[1] == "help" or sys.argv[1] == "--help"):
-                print("Usage:")
-                print(" update  Updates the system")
-                print(" config  Updates the configs")
-                print(" clean   cleans system")
-                print(" help    prints help message")
+                if (arg == "--system"):
+                    execution.install.system()
+                    didSomething = True
 
+                if (arg == "--home"):
+                    execution.install.home()
+                    didSomething = True
 
+                if (arg == "--clean"):
+                    execution.install.clean()
+                    didSomething = True
 
 
         except:
+            print("error:")
+
+        if (didSomething == False):
             print("Usage:")
-            print(" update  Updates the system")
-            print(" config  Updates the configs")
-            print(" clean   cleans system")
-            print(" help    prints help message")
+            print(" --update  Updates the system")
+            print(" --config  Updates the configs")
+            print(" --clean   cleans system")
+            print(" --help    prints help message")
+            print(" --system  Updates system packages")
+            print(" --home    Updates home packages")
+

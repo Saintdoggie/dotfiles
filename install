@@ -1,4 +1,4 @@
 #!/bin/sh
 
 #this makes a nix shell with 2 packages, termcolor and python then runs the installer
-nix-shell -p python39Packages.termcolor python39Packages.requests python39 --run "python installer/update.py $1 $2 $3"
+nix-shell -p python39Packages.termcolor python39Packages.requests python39Packages.distro python39 --run "python installer/update.py $1 $2 $3"

@@ -64,7 +64,6 @@ in {
   users.extraGroups.vboxusers.members = ["liam"];
 
   environment.etc = {
-  # Creates /etc/nanorc
   issue = {
     text = ''
       MrComputer TTY Login
@@ -72,13 +71,11 @@ in {
     '';
   };
 };
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  
   environment.systemPackages = [
     (pkgs.python3.withPackages Python-packages)
 
     # programming and terminal applications
-    pkgs.nano
     pkgs.wget
     pkgs.git
     
@@ -91,7 +88,6 @@ in {
 
     #games
     pkgs.python39
-    pkgs.waybar
 
   ];
   

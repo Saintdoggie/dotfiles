@@ -8,7 +8,6 @@
     pkgs.alacritty
     pkgs.qemu
     pkgs.vscodium
-    pkgs.neovim
     pkgs.jetbrains.idea-community
     pkgs.gnumake
     pkgs.sqlite
@@ -54,20 +53,29 @@
     pkgs.polkit
     pkgs.xdg-desktop-portal
     pkgs.lxde.lxsession
-
+    pkgs.neovim
     #Hyprland stuff
+    
     pkgs.pipewire
     pkgs.wireplumber
     pkgs.xwayland
     pkgs.hyprpaper
     pkgs.grim
-    pkgs.slurp
     pkgs.dunst
     pkgs.cava
     pkgs.playerctl
     pkgs.via
     pkgs.qmk
     pkgs.opentabletdriver
+    pkgs.xfce.thunar
+    pkgs.oguri
+    pkgs.bemenu
+    pkgs.eww-wayland
+    pkgs.wmctrl
+    
+    pkgs.arc-theme
+    pkgs.nordic
+
     
     #vpn stuff
     pkgs.protonvpn-cli

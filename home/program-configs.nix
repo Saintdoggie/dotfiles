@@ -32,6 +32,13 @@
       wlrobs
     ];
   };
-  
+
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Nordic-darker";
+      package = pkgs.nordic;
+    };
+  };
   
 }
