@@ -1,0 +1,15 @@
+[output DP-1]
+image=~/Pictures/pixelbluenight.gif
+filter=nearest
+scaling-mode=fill
+anchor=center
+
+
+
+[output HDMI-A-1]
+image=~/Pictures/pixelmountain.gif
+filter=nearest
+scaling-mode=fill
+anchor=center
+
+

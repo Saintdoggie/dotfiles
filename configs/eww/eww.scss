@@ -1,0 +1,95 @@
+* {
+  all: unset;
+}
+
+.bar {
+  background-color: rgba(16, 1, 55, 0);
+  color: #b0b4bc;
+  padding: 10px;
+  font-family: Cartograph CF Nerd Font, monospace;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sidestuff {
+  background: rgba(0, 0, 0, .4);
+  border-color: black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.sidestuff slider {
+  all: unset;
+  color: #ffd5cd;
+}
+
+.metric scale trough highlight {
+  all: unset;
+  background-color: #D35D6E;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.metric scale trough {
+  all: unset;
+  background-color: #4e4e4e;
+  border-radius: 50px;
+  min-height: 3px;
+  min-width: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.metric scale trough highlight {
+  all: unset;
+  background-color: #D35D6E;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.metric scale trough {
+  all: unset;
+  background-color: #4e4e4e;
+  border-radius: 50px;
+  min-height: 3px;
+  min-width: 50px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.label-ram {
+  font-size: large;
+}
+
+.workspaces button {
+  padding: 5px;
+  color: #cdd6f4;
+  margin-right: 10px;
+}
+
+.workspaces button.active {
+  color: black;
+}
+
+.workspaces button:hover {
+  background: #11111b;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+
+.workspaces button.focused {
+  color: black;
+  background: #eba0ac;
+  border-radius: 10px;
+}
+
+
+.workspaces {
+  background: rgba(0, 0, 0, .4);
+  border-color: black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
